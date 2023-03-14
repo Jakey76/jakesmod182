@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+}
+
+    .myWork {
+        background-color: black;
+        color: aliceblue;
+        padding: 25px;
+        margin: auto;
+        font-family: 'Courier New', Courier, monospace;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        font-size: 55px;
+        
+    }
+    .workGrid {
+        background-color: black;
+        color: aliceblue;
+        margin: 100px;
+        padding:30px;
+        display: grid;
+        grid-template-areas: 'img h4';
+        row-gap: 55px;
+        border-style: solid;
+        border-radius: 30px;
+    }
+    h4 {
+        padding-top: 70px ;
+        margin: 25px;
+        font-size: 55px;
+    }
+    p {
+        padding: 50px 0;
+        margin: auto;
+        font-size: 20px;
+    }
+    button {
+        padding: 5px;
+        margin: 50px;
+        border-radius: 7px;
+    }
+
+    @media only screen and (max-width:600) {
+        #categoryGrid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "img"
+        "h4";}
+    }
